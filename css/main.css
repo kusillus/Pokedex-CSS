@@ -1,0 +1,191 @@
+body{
+	background-color: #333;
+	font-family: 'Jura', sans-serif;
+	color: #FFF;
+	text-align: center;
+}
+.base{
+	background-color: #DC0A2D;
+	width: 19rem;
+	height: 29rem;
+	position: relative;
+	border-radius: 1rem;
+	margin: 1rem auto 0.5rem auto;
+}
+.base::before{
+	content: '';
+	border-color: transparent transparent transparent #FFC300;
+	border-width: 1.2rem;
+	border-style: solid;
+	width: 0;
+	position: absolute;
+	top: 14.4rem;
+	left: 0.8rem;
+}
+.base::after{
+    content: '';
+    width: 8rem;
+    height: 0.5rem;
+    background-color: #5f0010;
+    border-radius: 0.5rem;
+    /* border: solid 0.2rem #2f2222; */
+    position: absolute;
+    top: 26rem;
+    left: 5rem;
+}
+.detalles-top{
+    position: relative;
+    top: 0rem;
+    left: 1rem;
+}
+/*Primer circulo de la pokedex, color azul*/
+.circulo-uno{
+    background-color: #28AAFD;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: solid 0.4rem #fff;
+    position: absolute;
+    top: 1.3rem;
+}
+.circulo-uno::before, .circulo-uno::after{
+    content: '';
+    border-radius: 50%;
+    border: solid 1.5rem #1e91d8;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25em;
+}
+.circulo-uno::after{
+    border: solid 0.85rem #28AAFD;
+    top: 0.25rem;
+    left: 1.2em;
+}
+/*Termina el Primer circulo*/
+ 
+/*Circulo Dos Rojo*/
+ .circulo-dos, .circulo-tres, .circulo-cuatro{
+ 	background-color: #ff3255;
+ 	width: 1.4rem;
+ 	height: 1.4rem;
+ 	border-radius: 50%;
+ 	position: absolute;
+ 	top: 1.5rem;
+ 	left: 4.9rem;
+}
+.circulo-dos::before, .circulo-dos::after, .circulo-tres::before, .circulo-tres::after, .circulo-cuatro::before, .circulo-cuatro::after{
+    content: '';
+    border-radius: 50%;
+    border: solid 0.6rem #da2b49;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1em;
+}
+.circulo-dos::after{
+    border: solid 0.4rem #ff3255;
+    /* top: 0.1rem; */
+    left: 0.4rem;
+}
+
+/*Circulo Tres Amarillo*/
+.circulo-tres{
+	background-color: #ffc300;
+ 	left: 6.8rem;
+}
+.circulo-tres::before{
+	content: '';
+	border-color: #d4a304;
+}
+.circulo-tres::after{
+	border: solid 0.4rem #ffc300;
+    /* top: 0.1rem; */
+    left: 0.4rem;
+}
+
+/*Circulo Cuatro verde*/
+.circulo-cuatro{
+	background-color: #3E8548;
+	left: 8.7rem;
+}
+.circulo-cuatro::before{
+	content: '';
+	border-color: #2a6933;
+}
+.circulo-cuatro::after{
+	content: '';
+	border: solid 0.4rem #3E8548;
+	left: 0.4rem;
+}
+/*
+.circulo-dos, .circulo-dos::before, .circulo-dos::after{
+	background-color: #ff3255;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    /*border: solid 0.2rem #ff3255;*/
+   /* position: absolute;
+    top: 1.5rem;
+    left: 5.3rem;
+}
+.circulo-dos::before{
+	content: '';
+    background-color: #FFEC7C;
+    position: absolute;
+    left: 2rem;
+    top: 0;
+}
+.circulo-dos::after{
+	content: '';
+    background-color: #24a037;
+    position: absolute;
+    left: 4rem;
+    top: 0;
+}*/
+.barra, .barra::before, .barra::after{
+    width: 0;
+    /* height: 1rem; */
+    border-width: 0rem 0rem 0.5rem 8rem;
+    border-color: transparent transparent #2f2222 #2f2222;
+    border-style: solid;
+    /* background-color: rgba(51, 51, 51, 0.47); */
+    position: absolute;
+    top: 7rem;
+    left: -1rem;
+}
+.barra::before{
+    content: '';
+    border-width: 0rem 3rem 0.5rem 0rem;
+    border-color: transparent #2f2222 #2f2222 transparent;
+    top: -1.0rem;
+    left: -0.6rem;
+    transform: rotate(-45deg);
+}
+.barra::after{
+content: '';
+    top: -2rem;
+    left: 1.8rem;
+    border-width: 0rem 0rem 0.5rem 9.2rem;
+}
+.barra-lat{
+    width: 0.1em;
+    height: 23.5rem;
+    background-color: #dc0a2d;
+    top: 5.5rem;
+    left: 16.3rem;
+    border-style: solid;
+    border-width: 0 0.2rem;
+    border-color: #2f2222;
+    position: absolute;
+}
+.barra-lat::before, .barra-lat::after{
+    content: '';
+    width: 1.2rem;
+    height: 0.3rem;
+    background-color: #2f2222;
+    top: 3rem;
+    left: 0.3rem;
+    position: absolute;
+}
+.barra-lat::after{
+	top: 20rem;
+}
